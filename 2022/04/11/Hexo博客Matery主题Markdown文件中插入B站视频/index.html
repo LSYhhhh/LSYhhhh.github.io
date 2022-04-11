@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="傅里叶变换的本质与Python代码实现, 哈哈哈哈哈">
+    <meta name="keywords" content="Hexo博客Matery主题Markdown文件中插入B站视频, 哈哈哈哈哈">
     <meta name="description" content="虎年大吉">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>傅里叶变换的本质与Python代码实现 | Siyu Liu 的博客</title>
+    <title>Hexo博客Matery主题Markdown文件中插入B站视频 | Siyu Liu 的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">傅里叶变换的本质与Python代码实现</h1>
+                    <h1 class="description center-align post-title">Hexo博客Matery主题Markdown文件中插入B站视频</h1>
                 </div>
             </div>
         </div>
@@ -431,8 +431,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2-Python/">
-                                <span class="chip bg-color">傅里叶变换, Python</span>
+                            <a href="/tags/Hexo-Markdown-Matery/">
+                                <span class="chip bg-color">Hexo, Markdown, Matery</span>
                             </a>
                         
                     </div>
@@ -447,7 +447,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-04-10
+                    2022-04-11
                 </div>
                 
 
@@ -471,79 +471,43 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、连续傅里叶变换"><a href="#一、连续傅里叶变换" class="headerlink" title="一、连续傅里叶变换"></a>一、连续傅里叶变换</h2><p>关于傅里叶变换的直观理解，大家可以移步B站UP主“3Blue1Brown”视频，这个视频讲解的很清楚。</p>
-<div class="bilibili">
-    <iframe class="bilibili" src="https://player.bilibili.com/player.html?aid=62763042&bvid=BV1vt411N7Ti&cid=121886213&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
-</div>
+                <h3 id="问题：在不用插件的情况下，用B站官方的嵌入代码方式引入视频，视频屏幕很小"><a href="#问题：在不用插件的情况下，用B站官方的嵌入代码方式引入视频，视频屏幕很小" class="headerlink" title="问题：在不用插件的情况下，用B站官方的嵌入代码方式引入视频，视频屏幕很小"></a>问题：在不用插件的情况下，用B站官方的<code>嵌入代码</code>方式引入视频，视频屏幕很小</h3><p><img src="/../images/b%E7%AB%99%E5%B5%8C%E5%85%A5%E4%BB%A3%E7%A0%81.png" alt="b站嵌入代码"></p>
+<p>如下：</p>
+<iframe src="//player.bilibili.com/player.html?aid=212464091&bvid=BV1xa411t7JK&cid=553318499&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><h4 id="1、修改width和height"><a href="#1、修改width和height" class="headerlink" title="1、修改width和height"></a>1、修改width和height</h4><pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>200</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span>200</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bilibili<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>//player.bilibili.com/player.html?aid=212464091&amp;bvid=BV1xa411t7JK&amp;cid=553318499&amp;page=1<span class="token punctuation">"</span></span> <span class="token attr-name">scrolling</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">framespacing</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">allowfullscreen</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span></code></pre>
+<p>通过修改width和height来调整视频大小，但是换成不同的设备无法正常显示.</p>
+<h4 id="2、添加css自定义代码"><a href="#2、添加css自定义代码" class="headerlink" title="2、添加css自定义代码"></a>2、添加css自定义代码</h4><ul>
+<li>使用<code>@media</code>属性，对不同屏幕大小的设备，设置宽度和高度</li>
+<li><code>@media</code>可以查询到设备属性, 比如：屏幕高度、设备方向（如移动设备横屏）、可视窗口的宽高、屏幕解析度等</li>
+</ul>
+<p>修改方法：</p>
+<ul>
+<li>以<code>matery</code>主题为例， 找到主题文件夹下的<code>/hexo-theme-matery/source/css/my.css</code>文件，在文件中添加如下代码：<pre class="language-css" data-language="css"><code class="language-css"><span class="token comment">/* Here is your custom css styles. */</span>
 
-<p>傅里叶变换的公式为：<br><img src="/./images/%E5%9B%BE%E7%89%871.png" alt="角频率ω-时间t"></p>
-<p><img src="/./images/%E5%9B%BE%E7%89%872.png" alt="数字频率f-时间t"></p>
-<p>数字频率f与角频率ω之间的关系：</p>
-<pre class="language-python" data-language="python"><code class="language-python">ω <span class="token operator">=</span> f <span class="token operator">/</span> fs <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>pi</code></pre>
+<span class="token comment">/*哔哩哔哩视频适配*/</span>
 
-<p>其中fs为采样率</p>
-<h2 id="二、离散傅里叶变换"><a href="#二、离散傅里叶变换" class="headerlink" title="二、离散傅里叶变换"></a>二、离散傅里叶变换</h2><p>该部分后续补充</p>
-<h2 id="三、代码实现"><a href="#三、代码实现" class="headerlink" title="三、代码实现"></a>三、代码实现</h2><pre class="language-python" data-language="python"><code class="language-python"><span class="token comment"># encoding:utf-8</span>
-<span class="token triple-quoted-string string">"""
-__time__    : 2022/4/10 17:10
-__author__  : LIU SIYU
-__email__   :18811379768@163.com
-__address__ :Beijing Institute of Technology
-"""</span>
-<span class="token keyword">import</span> numpy <span class="token keyword">as</span> np
-<span class="token keyword">from</span> scipy<span class="token punctuation">.</span>fftpack <span class="token keyword">import</span> fft<span class="token punctuation">,</span> ifft
-<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt
-<span class="token keyword">from</span> matplotlib<span class="token punctuation">.</span>pylab <span class="token keyword">import</span> mpl
+<span class="token selector">.bilibili</span> <span class="token punctuation">&#123;</span>
+    <span class="token property">position</span><span class="token punctuation">:</span> relative<span class="token punctuation">;</span>
+    <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token keyword">only</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 767px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.bilibili</span> <span class="token punctuation">&#123;</span><span class="token property">height</span><span class="token punctuation">:</span> 15em<span class="token punctuation">;</span><span class="token property">max-width</span><span class="token punctuation">:</span> 25em<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token keyword">only</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 768px<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 991px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.bilibili</span> <span class="token punctuation">&#123;</span><span class="token property">height</span><span class="token punctuation">:</span> 20em<span class="token punctuation">;</span><span class="token property">max-width</span><span class="token punctuation">:</span> 30em<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token keyword">only</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 992px<span class="token punctuation">)</span> <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">max-width</span><span class="token punctuation">:</span> 1199px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.bilibili</span> <span class="token punctuation">&#123;</span><span class="token property">height</span><span class="token punctuation">:</span> 30em<span class="token punctuation">;</span><span class="token property">max-width</span><span class="token punctuation">:</span> 40em<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span>
+<span class="token atrule"><span class="token rule">@media</span> <span class="token keyword">only</span> screen <span class="token keyword">and</span> <span class="token punctuation">(</span><span class="token property">min-width</span><span class="token punctuation">:</span> 1200px<span class="token punctuation">)</span></span> <span class="token punctuation">&#123;</span>
+    <span class="token selector">.bilibili</span> <span class="token punctuation">&#123;</span><span class="token property">height</span><span class="token punctuation">:</span> 40em<span class="token punctuation">;</span><span class="token property">max-width</span><span class="token punctuation">:</span> 50em<span class="token punctuation">;</span><span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code></pre></li>
+<li>在B站嵌入代码中添加<code>class=&quot;bilibili&quot;</code>属性，如下：<pre class="language-markdown" data-language="markdown"><code class="language-markdown"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>iframe</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bilibili<span class="token punctuation">"</span></span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>//player.bilibili.com/player.html?aid=212464091&amp;bvid=BV1xa411t7JK&amp;cid=553318499&amp;page=1<span class="token punctuation">"</span></span> <span class="token attr-name">scrolling</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">border</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">frameborder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>no<span class="token punctuation">"</span></span> <span class="token attr-name">framespacing</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0<span class="token punctuation">"</span></span> <span class="token attr-name">allowfullscreen</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">></span></span> <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>iframe</span><span class="token punctuation">></span></span></code></pre></li>
+</ul>
+<p>效果如下：</p>
+<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=212464091&bvid=BV1xa411t7JK&cid=553318499&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
 
-mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'SimHei'</span><span class="token punctuation">]</span>  <span class="token comment"># 显示中文</span>
-mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'axes.unicode_minus'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>  <span class="token comment"># 显示负号</span>
-
-<span class="token comment"># 采样点选择1400个，因为设置的信号频率分量最高为600赫兹，根据采样定理知采样频率要大于信号频率2倍，所以这里设置采样频率为1400赫兹（即一秒内有1400个采样点，一样意思的）</span>
-fs <span class="token operator">=</span> <span class="token number">1400</span>  <span class="token comment"># 信号采样率为fs，1400Hz</span>
-x <span class="token operator">=</span> np<span class="token punctuation">.</span>linspace<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> fs<span class="token punctuation">)</span>
-
-<span class="token comment"># 设置需要采样的信号，频率分量有200，400和600</span>
-y <span class="token operator">=</span> <span class="token number">7</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>pi <span class="token operator">*</span> <span class="token number">200</span> <span class="token operator">*</span> x<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">5</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>pi <span class="token operator">*</span> <span class="token number">400</span> <span class="token operator">*</span> x<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">3</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>sin<span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>pi <span class="token operator">*</span> <span class="token number">600</span> <span class="token operator">*</span> x<span class="token punctuation">)</span>
-
-fft_y <span class="token operator">=</span> fft<span class="token punctuation">(</span>y<span class="token punctuation">)</span>  <span class="token comment"># 快速傅里叶变换</span>
-
-N <span class="token operator">=</span> <span class="token number">1400</span>
-x <span class="token operator">=</span> np<span class="token punctuation">.</span>arange<span class="token punctuation">(</span>N<span class="token punctuation">)</span>  <span class="token comment"># 频率个数</span>
-half_x <span class="token operator">=</span> x<span class="token punctuation">[</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span>N <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span>  <span class="token comment"># 取一半区间</span>
-half_w <span class="token operator">=</span> half_x <span class="token operator">/</span> fs <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token number">2</span> <span class="token operator">*</span> np<span class="token punctuation">.</span>pi<span class="token punctuation">)</span>
-
-abs_y <span class="token operator">=</span> np<span class="token punctuation">.</span><span class="token builtin">abs</span><span class="token punctuation">(</span>fft_y<span class="token punctuation">)</span>  <span class="token comment"># 取复数的绝对值，即复数的模(双边频谱)</span>
-angle_y <span class="token operator">=</span> np<span class="token punctuation">.</span>angle<span class="token punctuation">(</span>fft_y<span class="token punctuation">)</span>  <span class="token comment"># 取复数的角度</span>
-normalization_y <span class="token operator">=</span> abs_y <span class="token operator">/</span> N  <span class="token comment"># 归一化处理（双边频谱）</span>
-normalization_half_y <span class="token operator">=</span> normalization_y<span class="token punctuation">[</span><span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">int</span><span class="token punctuation">(</span>N <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span>  <span class="token comment"># 由于对称性，只取一半区间（单边频谱）</span>
-
-plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">231</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'原始波形'</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">232</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> fft_y<span class="token punctuation">,</span> <span class="token string">'black'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'双边振幅谱(未求振幅绝对值)'</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">9</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">233</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> abs_y<span class="token punctuation">,</span> <span class="token string">'r'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'双边振幅谱(未归一化)'</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">9</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">234</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> angle_y<span class="token punctuation">,</span> <span class="token string">'violet'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'双边相位谱(未归一化)'</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">9</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'violet'</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">235</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span> normalization_y<span class="token punctuation">,</span> <span class="token string">'g'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'双边振幅谱(归一化)'</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">9</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'green'</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>subplot<span class="token punctuation">(</span><span class="token number">236</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>half_w<span class="token punctuation">,</span> normalization_half_y<span class="token punctuation">,</span> <span class="token string">'blue'</span><span class="token punctuation">)</span>
-plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'单边振幅谱(归一化)'</span><span class="token punctuation">,</span> fontsize<span class="token operator">=</span><span class="token number">9</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'blue'</span><span class="token punctuation">)</span>
-
-plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
-</code></pre>
 
                 
             </div>
@@ -570,7 +534,7 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2022/04/10/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E7%9A%84%E6%9C%AC%E8%B4%A8%E4%B8%8EPython%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/">http://example.com/2022/04/10/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2%E7%9A%84%E6%9C%AC%E8%B4%A8%E4%B8%8EPython%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0/</a>
+                    <a href="http://example.com/2022/04/11/Hexo%E5%8D%9A%E5%AE%A2Matery%E4%B8%BB%E9%A2%98Markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%92%E5%85%A5B%E7%AB%99%E8%A7%86%E9%A2%91/">http://example.com/2022/04/11/Hexo%E5%8D%9A%E5%AE%A2Matery%E4%B8%BB%E9%A2%98Markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%92%E5%85%A5B%E7%AB%99%E8%A7%86%E9%A2%91/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -608,8 +572,8 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2-Python/">
-                                    <span class="chip bg-color">傅里叶变换, Python</span>
+                                <a href="/tags/Hexo-Markdown-Matery/">
+                                    <span class="chip bg-color">Hexo, Markdown, Matery</span>
                                 </a>
                             
                         </div>
@@ -779,9 +743,56 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/04/11/Hexo%E5%8D%9A%E5%AE%A2Matery%E4%B8%BB%E9%A2%98Markdown%E6%96%87%E4%BB%B6%E4%B8%AD%E6%8F%92%E5%85%A5B%E7%AB%99%E8%A7%86%E9%A2%91/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Hexo博客Matery主题Markdown文件中插入B站视频">
+                        
+                        <span class="card-title">Hexo博客Matery主题Markdown文件中插入B站视频</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-11
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Siyu Liu
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Hexo-Markdown-Matery/">
+                        <span class="chip bg-color">Hexo, Markdown, Matery</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/04/11/Hexo%20matery%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E4%BB%A3%E7%A0%81%E5%9D%97%E9%A3%8E%E6%A0%BC/">
                     <div class="card-image">
@@ -799,9 +810,9 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-04-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -817,43 +828,6 @@ plt<span class="token punctuation">.</span>show<span class="token punctuation">(
                         <span class="chip bg-color">Hexo, 代码块</span>
                     </a>
                     
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/03/20/PSRepair/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="如何使用PS修复照片反光区域">
-                        
-                        <span class="card-title">如何使用PS修复照片反光区域</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-03-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            Siyu Liu
-                            
-                        </span>
-                    </div>
                 </div>
                 
             </div>
